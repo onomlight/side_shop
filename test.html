@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="slider">
+      <input type="radio" name="slide" id="slide01" checked />
+      <input type="radio" name="slide" id="slide02" />
+      <input type="radio" name="slide" id="slide03" />
+      <input type="radio" name="slide" id="slide04" />
+      <ul class="list">
+        <li class="sitem">
+          <div>
+            <label for="slide04" class="left"></label>
+            <label for="slide02" class="right"></label>
+            <a href=""><img src="/1.jpeg" alt="" /></a>
+          </div>
+        </li>
+        <li class="sitem">
+          <div>
+            <label for="slide01" class="left"></label>
+            <label for="slide03" class="right"></label>
+            <a href=""><img src="2.jpeg" alt="" /></a>
+          </div>
+        </li>
+        <li class="sitem">
+          <div>
+            <label for="slide02" class="left"></label>
+            <label for="slide04" class="right"></label>
+            <a href=""><img src="3.jpeg" alt="" /></a>
+          </div>
+        </li>
+        <li class="sitem">
+          <div>
+            <label for="slide03" class="left"></label>
+            <label for="slide01" class="right"></label>
+            <a href=""><img src="4.jpeg" alt="" /></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul li {
+      list-style: none;
+    }
+    [name="slide"] {
+      display: none;
+    }
+    .slider {
+      max-width: 1500px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .slider .list {
+      white-space: nowrap;
+      font-size: 0;
+      overflow: hidden;
+    }
+    .slider .sitem {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      transition: all 0.35s;
+    }
+    .slider .sitem label {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    label.left {
+      left: 20px;
+      background-color: #5f5f5f;
+      background-image: url("./left.png");
+      background-position: center center;
+      background-size: 50%;
+      background-repeat: no-repeat;
+    }
+    label.right {
+      right: 20px;
+      background-color: #5f5f5f;
+      background-image: url("./right.png");
+
+      background-position: center center;
+      background-size: 50%;
+      background-repeat: no-repeat;
+    }
+    [id="slide01"]:checked ~ .list .sitem {
+      transform: translateX(0);
+      animation: slide01 20s infinite;
+    }
+    [id="slide02"]:checked ~ .list .sitem {
+      transform: translateX(-100%);
+      animation: slide02 20s infinite;
+    }
+    [id="slide03"]:checked ~ .list .sitem {
+      transform: translateX(-200%);
+      animation: slide03 20s infinite;
+    }
+    [id="slide04"]:checked ~ .list .sitem {
+      transform: translateX(-300%);
+      animation: slide04 20s infinite;
+    }
+
+    @keyframes slide01 {
+      0% {
+        left: 0%;
+      }
+      23% {
+        left: 0%;
+      }
+      25% {
+        left: -100%;
+      }
+      48% {
+        left: -100%;
+      }
+      50% {
+        left: -200%;
+      }
+      73% {
+        left: -200%;
+      }
+      75% {
+        left: -300%;
+      }
+
+      98% {
+        left: -300%;
+      }
+      100% {
+        left: 0%;
+      }
+    }
+    @keyframes slide02 {
+      0% {
+        left: 0%;
+      }
+      23% {
+        left: 0%;
+      }
+      25% {
+        left: -100%;
+      }
+      48% {
+        left: -100%;
+      }
+      50% {
+        left: -200%;
+      }
+      73% {
+        left: -200%;
+      }
+      75% {
+        left: 100%;
+      }
+      98% {
+        left: 100%;
+      }
+      100% {
+        left: 0%;
+      }
+    }
+    @keyframes slide03 {
+      0% {
+        left: 0%;
+      }
+      23% {
+        left: 0%;
+      }
+      25% {
+        left: -100%;
+      }
+      48% {
+        left: -100%;
+      }
+      50% {
+        left: 200%;
+      }
+      73% {
+        left: 200%;
+      }
+      75% {
+        left: 100%;
+      }
+      98% {
+        left: 100%;
+      }
+      100% {
+        left: 0%;
+      }
+    }
+    @keyframes slide04 {
+      0% {
+        left: 0%;
+      }
+      23% {
+        left: 0%;
+      }
+      25% {
+        left: 300%;
+      }
+      48% {
+        left: 300%;
+      }
+      50% {
+        left: 200%;
+      }
+      73% {
+        left: 200%;
+      }
+      75% {
+        left: 100%;
+      }
+      98% {
+        left: 100%;
+      }
+      100% {
+        left: 0%;
+      }
+    }
+  </style>
+</html>
