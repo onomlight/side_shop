@@ -154,7 +154,8 @@ element.style {
   width: 400px;
   height: 510px;
 }
-strong {
-}
-.description span {
+ul img:hover {
+  transition: 0.3s;
+
+  opacity: 0.8;
 }
