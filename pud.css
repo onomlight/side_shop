@@ -1,0 +1,160 @@
+.ec-base-product {
+  padding: 100px 0 0;
+  width: 100%;
+  overflow: hidden;
+}
+.ec-base-product .title {
+  margin: 0 0 80px;
+  position: relative;
+}
+.ec-base-product .title h2 {
+  font-weight: normal;
+  font-size: 17px;
+  color: #2e2e2e;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.ec-base-product .title .title_right {
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+.ec-base-product .title .title_right a {
+  padding: 0 5px;
+  color: #9c9c9c;
+  font-size: 10px;
+}
+.ec-base-product .title .title_right .on {
+  color: #383838;
+  text-decoration: underline;
+}
+.ec-base-product .prdList {
+  width: 100%;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.ec-base-product ul.grid4 > li {
+  width: 25%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.ec-base-product .prdList > li {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 50px;
+  color: #757575;
+  vertical-align: top;
+}
+li {
+  list-style: none;
+}
+.ec-base-product .prdList .thumbnail {
+  position: relative;
+  margin: 0 0 15px;
+  text-align: center;
+}
+.ec-base-product .prdList .thumbnail .prdImg {
+  position: relative;
+}
+.ec-base-product .prdList .description {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 11px;
+  line-height: 18px;
+}
+.ec-base-product .prdList .description .name {
+  display: block;
+  font-weight: normal;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.ec-base-product .prdList .description {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 11px;
+  line-height: 18px;
+}
+.ec-base-product .prdList .description .name a {
+  color: #2e2e2e;
+}
+a {
+  text-decoration: none;
+  color: #5c5c5c;
+  font-size: 11px;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+ul ul {
+  list-style-type: circle;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.ec-base-product .spec li .title {
+  font-weight: normal;
+  vertical-align: top;
+}
+.ec-base-product .title {
+  margin: 0 0 80px;
+  position: relative;
+}
+
+element.style {
+  font-size: 12px;
+  color: #555555;
+}
+.ec-base-product .spec li .title span {
+  vertical-align: top;
+}
+.ec-base-product .spec li .title {
+  font-weight: normal;
+  vertical-align: top;
+}
+.ec-base-product .color {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  margin: 5px 0 0;
+}
+.ec-base-product .color .chips {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px 2px 0;
+  border: 1px solid #e0e0e0;
+  font-size: 0;
+  line-height: 0;
+}
+element.style {
+  font-size: 12px;
+  color: #555555;
+  font-weight: bold;
+}
+.ec-base-product .prdList .icon {
+  margin: 17px 0 0;
+  vertical-align: middle;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.xans-record- img {
+  width: 400px;
+  height: 510px;
+}
+strong {
+}
+.description span {
+}
