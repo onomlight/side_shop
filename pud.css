@@ -154,7 +154,7 @@ element.style {
   width: 400px;
   height: 510px;
 }
-ul img:hover {
+.prdImg:hover {
   transition: 0.3s;
   scale: 0.95;
   opacity: 0.3;
